@@ -71,21 +71,21 @@ body.v6 #game_area_purchase h2.package_group {
 
 
 #game_highlights {
-    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%); /* IE10+ */
-    background: linear-gradient(to right,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%); /* W3C */
+    background: -moz-linear-gradient(bottom,  rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+    /* background: -webkit-gradient(linear, left top, right top, color-stop(50%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.4))); Chrome,Safari4+ */
+    background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(bottom,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(bottom,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=1 ); /* IE6-9 */
 
-	padding-bottom: 12px;
+	padding-bottom: 4px;
 }
 
 .game_background_glow {
 	background: url( '/public/images/v6/app/game_page_background_shadow.png?v=2' );
 	background-position: bottom;
-	padding-bottom: 1px;
+	/* padding-bottom: 1px; */
 	background-repeat: no-repeat;
 	margin: 0px auto;
 
