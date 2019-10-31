@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="theme-color" content="#171a21">
+	<title>CDDC</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+	<link href="steam1.css" rel="stylesheet" type="text/css">
+	<link href="steam2.css" rel="stylesheet" type="text/css">
+	<link href="steam3.css" rel="stylesheet" type="text/css">
+	<link href="steam4.css" rel="stylesheet" type="text/css">
+	<link href="steam5.css" rel="stylesheet" type="text/css">
+	<link href="steam6.css" rel="stylesheet" type="text/css">
+	<link href="steam7.css" rel="stylesheet" type="text/css">
+	<link href="steam8.css" rel="stylesheet" type="text/css">
+	<link href="steam9.css" rel="stylesheet" type="text/css">
+	<link href="steam10.css" rel="stylesheet" type="text/css">
+	<link href="steam11.css" rel="stylesheet" type="text/css">
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-33786258-1', 'auto', {
+			'sampleRate': 0.4
+		});
+		ga('set', 'dimension1', false);
+		ga('set', 'dimension2', 'External');
+		ga('set', 'dimension3', 'application');
+		ga('set', 'dimension4', "application\/app");
+		ga('send', 'pageview');
+
+	</script>
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/shared/javascript/jquery-1.8.3.min.js?v=.TZ2NKhB-nliU"></script>
+	<script type="text/javascript">$J = jQuery.noConflict();</script>
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/shared/javascript/tooltip.js?v=.vG8yiuBTGwkE"></script>
+
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/shared/javascript/shared_global.js?v=aNqroEZPyXfD&amp;l=schinese"></script>
+
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/javascript/main.js?v=zu3N6_NFFbkx&amp;l=schinese"></script>
+
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/javascript/dynamicstore.js?v=PpYvyb6CknTg&amp;l=schinese"></script>
+
+
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function (event) {
+			$J.data(document, 'x_readytime', new Date().getTime());
+			$J.data(document, 'x_oldref', GetNavCookie());
+			SetupTooltips({ tooltipCSSClass: 'store_tooltip' });
+		});
+	</script>
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/javascript/gamehighlightplayer.js?v=ykDsB8CZZNn9&amp;l=schinese"></script>
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/shared/javascript/user_reviews.js?v=9cIr8h-SOPSU&amp;l=schinese"></script>
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/shared/javascript/dselect.js?v=yT8Q5U2-O4wX&amp;l=schinese"></script>
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/javascript/app_tagging.js?v=5LqNiNaj_OCF&amp;l=schinese"></script>
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/javascript/game.js?v=99XRD-HVwcrC&amp;l=schinese"></script>
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/shared/javascript/flot-0.8/jquery.flot.js?v=.zrJjtPpGflQQ"></script>
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/shared/javascript/flot-0.8/jquery.flot.resize.js?v=.TWn5-WgQL6_C"></script>
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/shared/javascript/flot-0.8/jquery.flot.time.js?v=.wh3SCHrBBvNi"></script>
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/shared/javascript/flot-0.8/jquery.flot.selection.js?v=.EGbodhwqG-oT"></script>
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/shared/javascript/jquery-ui-1.9.2.js?v=.4YjdpcHj68MM"></script>
+	<script type="text/javascript"
+		src="https://store.st.dl.bscstorage.net/public/shared/javascript/shared_responsive_adapter.js?v=QPY6d2SOXPzS&amp;l=schinese"></script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Jekyll v3.8.5">
+
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
+
+	<!-- Bootstrap core CSS -->
+	<link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+
+		.p1 {
+			float: left
+		}
+
+		.p2 {
+			float: right
+		}
+
+		#photoStyle {
+			width: 600px;
+			height: 337px;
+		}
+	</style>
+	<!-- Custom styles for this template -->
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style="padding-top: 0px;">
+
+	<main role="main">
+
+		<nav class="navbar navbar-light" style="background-color: #563d7c!important">
+			<b class="navbar-brand" style="color: #fcda61; font-size: 1.5rem;">
+				<img src="logo1.png" width="45" height="45" class="d-inline-block align-top" alt="">
+				CDDC
+			</b>
+			<p style="font-size: 2rem; font-weight: 500; color: #fcda61;">ALL videos and photos are taken by Michael and Oscar</p>
+			<button type="button" class="btn btn-outline-primary"
+				href="#" style="border-color: #fcda61; color: #fcda61; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; font-weight: 700">All
+				videos</button>
+		</nav>
+
+		<nav class="navbar navbar-light"
+			style="padding-top: 0px; padding-bottom: 0px; position: fixed; width: 100%; height:100%; top: 0px; text-transform: uppercase">
+			<ul style="list-style: none;">
+				<li class="nav-item">
+					<a class="nav-link p1" href="JoinUs.html"
+						style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; color: #587baf; font-size: 1.15rem; font-weight: 900 ">Join
+						us</a>
+				</li>
+				<li class="nav-item">
+					<img class="nav-link p1" href="#" style="width: 90px; height: 500px;" src="ad1.jpg">
+				</li>
+			</ul>
+
+			<img src="diving.jpg" width="250" height="250" class="d-inline-block" alt="">
+
+			<ul style="list-style: none">
+				<li class="nav-item">
+					<a class="nav-link p2" href="Advice.html"
+						style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; color: #587baf; font-size: 1.15rem; font-weight: 900">Advice</a>
+				</li>
+				<li class="nav-item">
+					<img class="nav-link p1" href="#" style="width: 90px; height: 500px;" src="ad2.jpg">
+				</li>
+			</ul>
+		</nav>
+
+		<div class="block">
+			<script type="text/javascript">
+				var strRequiredVersion = "9";
+				if (typeof (g_bIsOnMac) != 'undefined' && g_bIsOnMac)
+					strRequiredVersion = "10.1.0";
+
+			</script>
+			<div class="game_background_glow" style="padding-top: 5px">
+				<div class="block_content page_content" id="game_highlights">
+
+					<div class="rightcol">
+						<div class="glance_ctn">
+							<div class="game_description_snippet">
+							</div>
+
+							<div class="glance_ctn_responsive_left">
+								<div class="user_reviews">
+
+
+									<div class="user_reviews_summary_row" onclick="window.location='#app_reviews_hash'"
+										style="cursor: pointer;" data-tooltip-html="" itemprop="aggregateRating"
+										itemscope itemtype="http://schema.org/AggregateRating">
+										<div
+											style="font-weight: 700; font-size: 1rem; color: black; padding-top: 40px;">
+											There has long been a misunderstanding that diving is dangerous, so many
+											people choose to stay at home to watch <img
+												src="https://assets.nationalgeographic.com/styleguide/stable/logos/ng-logo-2fl.svg"
+												style="width: 70px; height: 70px"> or <img src="discovery.jpg"
+												style="width: 80px; height: 20px; background-color: transparent">
+											instead of having a try. They think it’s risky or even dangerous. They are
+											right to some extent. But I believe they will change their mind once they
+											browse my website</div>
+										<div class="summary column">
+											<span class="game_review_summary mixed" itemprop="description"></span>
+											<span class="responsive_hidden">
+
+											</span>
+											<span class="nonresponsive_hidden responsive_reviewdesc">
+											</span>
+
+											<!-- microdata -->
+											<meta itemprop="reviewCount" content="35">
+											<meta itemprop="ratingValue" content="6">
+											<meta itemprop="bestRating" content="10">
+											<meta itemprop="worstRating" content="1">
+										</div>
+									</div>
+
+
+
+
+
+									<div class="release_date">
+										<div class="subtitle column"></div>
+										<div class="date"></div>
+									</div>
+
+									<div class="dev_row">
+										<div class="subtitle column"></div>
+										<div class="summary column" id="developers_list">
+											<a
+												href="https://store.steampowered.com/developer/jujubee?snr=1_5_9__2000"></a>
+										</div>
+									</div>
+
+									<div class="dev_row">
+										<div class="subtitle column"></div>
+										<div class="summary column">
+											<a
+												href="https://store.steampowered.com/publisher/jujubee?snr=1_5_9__2000"></a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="glance_ctn_responsive_right">
+								<!-- when the javascript runs, it will set these visible or not depending on what fits in the area -->
+								<div class="glance_tags_ctn popular_tags_ctn">
+									<div class="glance_tags_label"></div>
+									<div class="glance_tags popular_tags" data-appid="990030">
+
+										<ul style="list-style: none">
+											<li>
+												<div class="app_tag add_button" onclick="ShowAppTagModal( 990030 )"
+													style="color: #d44950">World's 2ed most dangerous sport</div>
+											</li>
+											<li>
+												<div class="app_tag add_button" onclick="ShowAppTagModal( 990030 )"
+													style="color: #d44950">More than 60 million active divers</div>
+											</li>
+											<li>
+												<div class="app_tag add_button" onclick="ShowAppTagModal( 990030 )"
+													style="color: #d44950">Has a history 200+ years</div>
+											</li>
+											<li>
+												<div class="app_tag add_button" onclick="ShowAppTagModal( 990030 )"
+													style="color: #d44950">NO SWIMMING TECHNIQUE</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div style="clear: both;"></div>
+						</div>
+					</div>
+
+					<div class="leftcol">
+						<div class="highlight_ctn">
+							<div class="highlight_overflow">
+								<div id="highlight_player_area">
+									<div class="highlight_player_area_spacer">
+										<img
+											src="https://store.st.dl.bscstorage.net/public/images/game/game_highlight_image_spacer.gif">
+									</div>
+									<div class="highlight_player_item highlight_movie" id="highlight_movie_256671714"
+										style="display: none;" data-webm-source="video1.mp4"
+										data-webm-hd-source="video1.mp4" data-mp4-source="video1.mp4"
+										data-mp4-hd-source="video1.mp4" data-poster="video1.mp4">
+									</div>
+									<div class="highlight_player_item highlight_movie" id="highlight_movie_256666154"
+										style="display: none;" data-webm-source="video2.mp4"
+										data-webm-hd-source="video2.mp4" data-mp4-source="video2.mp4"
+										data-mp4-hd-source="video2.mp4" data-poster="video2.mp4">
+									</div>
+									<div class="highlight_player_item highlight_movie" id="highlight_movie_256667376"
+										style="display: none;" data-webm-source="video4.mp4"
+										data-webm-hd-source="video4.mp4" data-mp4-source="video4.mp4"
+										data-mp4-hd-source="video4.mp4" data-poster="video4.mp4">
+									</div>
+									<div class="highlight_player_item highlight_movie" id="highlight_movie_256667965"
+										style="display: none;" data-webm-source="video3.mp4"
+										data-webm-hd-source="video3.mp4" data-mp4-source="video3.mp4"
+										data-mp4-hd-source="video3.mp4" data-poster="video3.mp4">
+									</div>
+
+									<div class="highlight_player_item highlight_screenshot"
+										id="highlight_screenshot_ss_119c7a8e046289483d04947bfa5ae3ab3a4a97be.jpg"
+										style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link"
+												data-screenshotid="ss_119c7a8e046289483d04947bfa5ae3ab3a4a97be.jpg"
+												href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/384190/ss_119c7a8e046289483d04947bfa5ae3ab3a4a97be.1920x1080.jpg?t=1570017644"
+												target="_blank" rel="noopener">
+												<img src="https://store.st.dl.bscstorage.net/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+									<div class="highlight_player_item highlight_screenshot"
+										id="highlight_screenshot_ss_b1038245a188f63c24a8112b7a36311e3d851935.jpg"
+										style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link"
+												data-screenshotid="ss_b1038245a188f63c24a8112b7a36311e3d851935.jpg"
+												href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/384190/ss_b1038245a188f63c24a8112b7a36311e3d851935.1920x1080.jpg?t=1570017644"
+												target="_blank" rel="noopener">
+												<img src="https://store.st.dl.bscstorage.net/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+									<div class="highlight_player_item highlight_screenshot"
+										id="highlight_screenshot_ss_47a6412b84130bb2c5508b0e34365ff12263bed3.jpg"
+										style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link"
+												data-screenshotid="ss_47a6412b84130bb2c5508b0e34365ff12263bed3.jpg"
+												href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/384190/ss_47a6412b84130bb2c5508b0e34365ff12263bed3.1920x1080.jpg?t=1570017644"
+												target="_blank" rel="noopener">
+												<img src="https://store.st.dl.bscstorage.net/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+									<div class="highlight_player_item highlight_screenshot"
+										id="highlight_screenshot_ss_9ad3c0fba255bf54bbe4c6db2aa96a0d8acca892.jpg"
+										style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link"
+												data-screenshotid="ss_9ad3c0fba255bf54bbe4c6db2aa96a0d8acca892.jpg"
+												href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/384190/ss_9ad3c0fba255bf54bbe4c6db2aa96a0d8acca892.1920x1080.jpg?t=1570017644"
+												target="_blank" rel="noopener">
+												<img src="https://store.st.dl.bscstorage.net/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+									<div class="highlight_player_item highlight_screenshot"
+										id="highlight_screenshot_ss_71b3809eb957c8af9d43ef9d282f7ef3267d73db.jpg"
+										style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link"
+												data-screenshotid="ss_71b3809eb957c8af9d43ef9d282f7ef3267d73db.jpg"
+												href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/384190/ss_71b3809eb957c8af9d43ef9d282f7ef3267d73db.1920x1080.jpg?t=1570017644"
+												target="_blank" rel="noopener">
+												<img src="https://store.st.dl.bscstorage.net/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+									<div class="highlight_player_item highlight_screenshot"
+										id="highlight_screenshot_ss_d47acc2f4600310d41d966a55752948692891eaa.jpg"
+										style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link"
+												data-screenshotid="ss_d47acc2f4600310d41d966a55752948692891eaa.jpg"
+												href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/384190/ss_d47acc2f4600310d41d966a55752948692891eaa.1920x1080.jpg?t=1570017644"
+												target="_blank" rel="noopener">
+												<img src="https://store.st.dl.bscstorage.net/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+									<div class="highlight_player_item highlight_screenshot"
+										id="highlight_screenshot_ss_b5138022d32b69aa5157630dee665433934017d7.jpg"
+										style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link"
+												data-screenshotid="ss_b5138022d32b69aa5157630dee665433934017d7.jpg"
+												href="https://steamcommunity.com/linkfilter/?url=https://media.st.dl.bscstorage.net/steam/apps/384190/ss_b5138022d32b69aa5157630dee665433934017d7.1920x1080.jpg?t=1570017644"
+												target="_blank" rel="noopener">
+												<img src="https://store.st.dl.bscstorage.net/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+									<script id="photoStyle" type="text/javascript">
+										var rgScreenshotURLs = { "ss_119c7a8e046289483d04947bfa5ae3ab3a4a97be.jpg": "photo1.jpg", "ss_b1038245a188f63c24a8112b7a36311e3d851935.jpg": "photo2.jpg", "ss_47a6412b84130bb2c5508b0e34365ff12263bed3.jpg": "photo3.jpg", "ss_9ad3c0fba255bf54bbe4c6db2aa96a0d8acca892.jpg": "photo4.jpg", "ss_71b3809eb957c8af9d43ef9d282f7ef3267d73db.jpg": "photo5.jpg", "ss_d47acc2f4600310d41d966a55752948692891eaa.jpg": "photo10.jpg", "ss_b5138022d32b69aa5157630dee665433934017d7.jpg": "photo18.jpg" };
+									</script>
+								</div>
+								<div id="highlight_strip">
+									<div id="highlight_strip_scroll" style="width: 1322px;">
+										<div class="highlight_selector"></div>
+
+										<div class="highlight_strip_item highlight_strip_movie"
+											id="thumb_movie_256671714">
+
+											<!-- video photo -->
+
+											<img class="movie_thumb" src="title1.png">
+											<div class="highlight_movie_marker"></div>
+										</div>
+
+										<div class="highlight_strip_item highlight_strip_screenshot"
+											id="thumb_screenshot_ss_119c7a8e046289483d04947bfa5ae3ab3a4a97be.jpg">
+											<img src="photo1.jpg" style="width: 116px; height: 65px;">
+										</div>
+										<div class="highlight_strip_item highlight_strip_screenshot"
+											id="thumb_screenshot_ss_b1038245a188f63c24a8112b7a36311e3d851935.jpg">
+											<img src="photo2.jpg" style="width: 116px; height: 65px;">
+										</div>
+										<div class="highlight_strip_item highlight_strip_screenshot"
+											id="thumb_screenshot_ss_47a6412b84130bb2c5508b0e34365ff12263bed3.jpg">
+											<img src="photo3.jpg" style="width: 116px; height: 65px;">
+										</div>
+										<div class="highlight_strip_item highlight_strip_screenshot"
+											id="thumb_screenshot_ss_9ad3c0fba255bf54bbe4c6db2aa96a0d8acca892.jpg">
+											<img src="photo4.jpg" style="width: 116px; height: 65px;">
+										</div>
+										<div class="highlight_strip_item highlight_strip_screenshot"
+											id="thumb_screenshot_ss_71b3809eb957c8af9d43ef9d282f7ef3267d73db.jpg">
+											<img src="photo5.jpg" style="width: 116px; height: 65px;">
+										</div>
+										<div class="highlight_strip_item highlight_strip_screenshot"
+											id="thumb_screenshot_ss_d47acc2f4600310d41d966a55752948692891eaa.jpg">
+											<img src="photo10.jpg" style="width: 116px; height: 65px;">
+										</div>
+										<div class="highlight_strip_item highlight_strip_screenshot"
+											id="thumb_screenshot_ss_b5138022d32b69aa5157630dee665433934017d7.jpg">
+											<img src="photo18.jpg" style="width: 116px; height: 65px;">
+										</div>
+
+										<div class="highlight_strip_item highlight_strip_movie"
+											id="thumb_movie_256666154">
+											<img class="movie_thumb" src="title2.png">
+											<div class="highlight_movie_marker"></div>
+										</div>
+										<div class="highlight_strip_item highlight_strip_movie"
+											id="thumb_movie_256667376">
+											<img class="movie_thumb" src="title4.png">
+											<div class="highlight_movie_marker"></div>
+										</div>
+										<div class="highlight_strip_item highlight_strip_movie"
+											id="thumb_movie_256667965">
+											<img class="movie_thumb" src="title3.png">
+											<div class="highlight_movie_marker"></div>
+										</div>
+									</div>
+								</div>
+								<div class="slider_ctn">
+									<div id="highlight_slider_left" class="slider_left"><span></span></div>
+									<div class="slider" id="highlight_slider">
+										<div class="slider_bg">
+										</div>
+										<div class="handle">
+										</div>
+									</div>
+									<div id="highlight_slider_right" class="slider_right"><span></span></div>
+								</div>
+								<script type="text/javascript">
+									$J(function () {
+										var player = new HighlightPlayer({
+											elemPlayerArea: 'highlight_player_area',
+											elemStrip: 'highlight_strip',
+											elemStripScroll: 'highlight_strip_scroll',
+											elemSlider: 'highlight_slider',
+											rgScreenshotURLs: rgScreenshotURLs
+										});
+
+										$J('#highlight_slider_right').click(function () {
+											player.Transition(true);
+										});
+										$J('#highlight_slider_left').click(function () {
+											player.TransitionBack(true);
+										});
+
+										if (window.location.hash) {
+											var ssid = window.location.hash.substr(1);
+											player.HighlightScreenshot(ssid);
+										}
+									});
+								</script>
+							</div>
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class="queue_overflow_ctn">
+				<div class="queue_ctn">
+					<div class="queue_actions_ctn">
+						<p></p>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+
+		<div class="container marketing">
+
+			<!-- Three columns of text below the carousel -->
+			<div class="row">
+				<div class="col-lg-4">
+					<img class="bd-placeholder-img rounded-circle" width="140" height="140" src="Oscar3.jpg"
+						preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+						aria-label="Placeholder: 140x140">
+					<title>Placeholder</title>
+					<rect width="100%" height="100%" fill="#777" />
+					<h2>Oscar Zhu</h2>
+					<ur>
+						<li>
+							<p style="font-family: 'Spectral','Times',serif; font-weight: 1000; font-size: 1.25rem">
+								Oscar, as a senior student in Chengdu No.7 High School, was qualified as a <a
+									href="https://www.padi.com/courses/rescue-diver" style="color: black; font-style: italic; font-size: 1.35rem; 
+                 " class="link">Rescue Diver</a> in 2018. </p>
+						</li>
+						<li>
+							<p style="font-family: 'Spectral','Times',serif; font-weight: 1000; font-size: 1.25rem">With
+								abundant diving experience and Excellent control of <a
+									href="https://www.padi.com/courses/peak-performance-buoyancy"
+									class="link">Buoyancy</a>, he possesses <a
+									href="https://www.padi.com/courses/rescue-diver" class="link">Rescue Diver</a> and
+								<a href="https://www.padi.com/courses/enriched-air-diver" class="link">Nitrox</a>
+								certificate.</p>
+						</li>
+						<li>
+							<p style="font-family: 'Spectral','Times',serif; font-weight: 1000; font-size: 1.25rem">
+								Oscar have studied HTML, CSS, and JS for approximately 30 hours. He plays as an
+								indispensible member in our squad since he provides both precious materials and
+								technical assistance</p>
+						</li>
+					</ur>
+				</div><!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<img class="bd-placeholder-img rounded-circle" width="140" height="140" src="Michael3.jpg"
+						preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+						aria-label="Placeholder: 140x140">
+					<title>Placeholder</title>
+					<rect width="100%" height="100%" fill="#777" />
+					<h2>Michael Shao</h2>
+					<ur>
+						<li>
+							<p style="font-family: 'Spectral','Times',serif; font-weight: 1000; font-size: 1.25rem">
+								Known as the "Spooky Shao" since I am a mad-brained X patients(<a
+									href="https://en.wikipedia.org/wiki/The_X-Files" class="link">The X Files</a>). As a
+								student at NC, I would always spend my some part of my spare time on analysing the plot
+								in <a href="https://en.wikipedia.org/wiki/The_X-Files" class="link">The X Files</a></p>
+						</li>
+						<li>
+							<p style="font-family: 'Spectral','Times',serif; font-weight: 1000; font-size: 1.25rem">
+								Although I only have a <a href="https://www.padi.com/courses/advanced-open-water"
+									class="link">AOW</a> and <a href="https://www.padi.com/courses/enriched-air-diver"
+									class="link">Nitrox</a> certificate, I have accumulated more than 40 tanks of diving
+								experience, which gives me plenty of confidence to challenge the <a
+									href="https://www.padi.com/courses/rescue-diver" class="link">Rescue Diver</a>
+								course.</p>
+						</li>
+						<li>
+							<p style="font-family: 'Spectral','Times',serif; font-weight: 1000; font-size: 1.25rem">One
+								of the most enjoyable activity for me is coding. After 30 hours of learning and a week
+								of working as a <a href="#" class="link">TA at the seminar</a>, I worked out this
+								website with my friends. </p>
+						</li>
+					</ur>
+
+				</div><!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<img class="bd-placeholder-img rounded-circle" width="140" height="140"
+						src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1567683162&di=40ffe69077be160751a0e234088308e3&src=http://bpic.588ku.com/element_origin_min_pic/01/29/83/15573af4cbc82b7.jpg"
+						preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+						aria-label="Placeholder: 140x140">
+					<title>Placeholder</title>
+					<rect width="100%" height="100%" fill="#777" />
+					<h2>Bill Zhang</h2>
+					<ur>
+						<li>
+							<p style="font-size: 2rem; text-align: center">He is a student</p>
+						</li>
+					</ur>
+				</div><!-- /.col-lg-4 -->
+			</div>
+
+
+			<!-- START THE FEATURETTES -->
+
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">Why do we dive?<span class="text-muted"
+							style="font-size: 1.75rem">What's so exicting???</span></h2>
+					<p class="lead" style="font-weight: 600">The corals with groups of unfamiliar fish, caves with
+						clusters of <a href="https://en.wikipedia.org/wiki/Aplysiomorpha"
+							style="color: #ba00ba; font-weight: 800">Sea Hares</a> inhabiting on the rocks, <a
+							href="https://en.wikipedia.org/wiki/Sea_anemone"
+							style="color: #8e3948; font-weight: 800">Sea Anemones</a> with a family of clownfish (we
+						call them Nemo because of the famous Disney movie: <a
+							href="https://www.imdb.com/title/tt0266543/"
+							style="color: darkorange; font-weight: 800">Finding Nemo</a>). All these gorgeous creatures
+						gathered and established a world so different from the one on land. “You want to explore these
+						magic territories.” A voice echoed in your head.
+					</p>
+				</div>
+				<div class="col-md-5">
+					<img src="photo20.jpg">
+				</div>
+			</div>
+
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7 order-md-2">
+					<h2 class="featurette-heading">Is it dangerous?<span class="text-muted"
+							style="font-size: 1.75rem">1/211864 mortality</span></h2>
+					<p class="lead" style="font-weight: 600">With more than 200 years of history, divers have developed
+						<a href="https://www.leisurepro.com/blog/scuba-guides/scuba-diving-essential-things-need-bring/"
+							style="color: #5151f8; font-weight: 800">a compelet series of equipments</a>: mask, BCD,
+						regulator, wet suit, fins, diving computer... Well considered procedures and well trained
+						instructors will ensure your safty. In additoin, the <a
+							href="https://www.padi.com/courses/rescue-diver"
+							style="color: #84001a; font-weight: 800">Rescue diver curriculum </a> provides all divers
+						with a secure underwater environment.</p>
+				</div>
+				<div class="col-md-5 order-md-1">
+					<img src="photo21.jpg">
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">It is expensive?<span class="text-muted"
+							style="font-size: 1.25rem">Come on! You can afford the air tickets!</span></h2>
+					<p class="lead" style="font-weight: 600">Of course you need to spend money on the equipments, but
+						not all of them are required. For instance, you only need to purchase the <a
+							href="https://www.amazon.com/s?k=diving+mask&__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&crid=2C3RVNZ7GQF89&sprefix=diving+%2Caps%2C377&ref=nb_sb_ss_i_1_7"
+							style="color: #2f2f53; font-weight: 800">mask(50$)</a>, <a
+							href="https://www.amazon.com/s?k=fins&__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&ref=nb_sb_noss_2"
+							style="color: #2f2f53; font-weight: 800">fins(50$)</a>, <a
+							href="https://www.amazon.com/s?k=wet+suits&__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&ref=nb_sb_noss_2"
+							style="color: #2f2f53; font-weight: 800">wet suit(100$)</a> and if you want to collect the
+						data, <a
+							href="https://www.amazon.com/s?k=dive+computer&__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&ref=nb_sb_noss"
+							style="color: #010183; font-weight: 800">a diving computer(700$)</a>. Expensive stuffs can
+						be rented from the dive shop, such as BCD, tanks, regulators and weight belt. Besides, the
+						curriculums and fun dive experience are relatively cheap compare to your hotel fee and air
+						tickets, so why don't give it a try?</p>
+				</div>
+				<div class="col-md-5">
+					<img src="photo31.jpg" style="width: 445px; height:593px ">
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<!-- /END THE FEATURETTES -->
+
+		</div><!-- /.container -->
+
+
+		<!-- FOOTER -->
+		<footer class="row container" style="text-align: center">
+			<div class="col-4"></div>
+			<div class="col-3">
+				<ul style="list-style: none; font-family: 'gilroy','Helvetica',sans-serif; font-weight: 800">
+					<li>
+						MICHAEL SHAO
+					</li>
+					<li>
+						E-mail:2354690233@qq.com
+					</li>
+					<li>
+						The Middle School Attached To Sichuan University<img
+							src="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=ca47f31100f79052fb124f6c6d9abcaf/d009b3de9c82d158265cd9b3890a19d8bd3e42d2.jpg"
+							style="width: 100px; height: 100px">
+					</li>
+				</ul>
+			</div>
+			<div class="col-3">
+				<ul style="list-style: none; font-family: 'gilroy','Helvetica',sans-serif; font-weight: 1000">
+					<li>
+						OSCAR ZHU
+					</li>
+					<li>
+						E-mail:2813465252@qq.com
+					</li>
+					<li>
+						Chengdu No.7 High School<img src="high%20school1.jpg" style="width: 100px; height: 100px">
+					</li>
+				</ul>
+			</div>
+			<div class="col-1">
+				<ul style="list-style: none; font-family: 'gilroy','Helvetica',sans-serif; font-weight: 1000">
+					<li>
+						Bill Zhang
+					</li>
+					<li>
+						???
+					</li>
+					<li>
+						???
+					</li>
+				</ul>
+			</div>
+			<div class="col-1">
+				<p class="float-right"><a href="https://github.com/" style="color: pink;font-weight: 600">My github</a>
+				</p>
+			</div>
+		</footer>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+	<script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
